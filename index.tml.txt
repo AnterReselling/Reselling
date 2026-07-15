@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Anter Reselling</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.82),
+        rgba(0,0,0,.92)
+    ),
+    url("https://images.unsplash.com/photo-1511512578047-dfb367046420");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:white;
+
+}
+
+
+/* NAV */
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:25px 8%;
+
+border-bottom:1px solid #222;
+
+background:rgba(0,0,0,.5);
+
+backdrop-filter:blur(10px);
+
+}
+
+
+.logo{
+
+font-size:28px;
+font-weight:900;
+
+}
+
+
+.logo span{
+
+color:#8b5cf6;
+
+}
+
+
+nav a{
+
+color:#aaa;
+text-decoration:none;
+margin-left:25px;
+
+}
+
+nav a:hover{
+
+color:white;
+
+}
+
+
+
+/* HERO */
+
+.hero{
+
+min-height:75vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+padding:40px;
+
+}
+
+
+.hero-box{
+
+background:rgba(15,15,15,.75);
+
+border:1px solid #333;
+
+padding:70px;
+
+border-radius:35px;
+
+backdrop-filter:blur(20px);
+
+}
+
+
+.hero h1{
+
+font-size:75px;
+
+}
+
+
+.hero h1 span{
+
+color:#8b5cf6;
+
+}
+
+
+.hero p{
+
+color:#aaa;
+
+font-size:22px;
+
+margin-top:20px;
+
+}
+
+
+
+.discord{
+
+display:inline-block;
+
+margin-top:35px;
+
+padding:18px 45px;
+
+background:#5865F2;
+
+border-radius:15px;
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+section{
+
+padding:80px 8%;
+
+}
+
+
+.title{
+
+font-size:45px;
+
+margin-bottom:50px;
+
+text-align:center;
+
+}
+
+
+
+/* PRODUKTE */
+
+
+.products{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+
+gap:40px;
+
+}
+
+
+
+.card{
+
+background:rgba(15,15,15,.85);
+
+border:1px solid #292929;
+
+border-radius:30px;
+
+padding:45px;
+
+min-height:350px;
+
+transition:.35s;
+
+backdrop-filter:blur(15px);
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-15px);
+
+border-color:#8b5cf6;
+
+box-shadow:0 20px 70px rgba(139,92,246,.25);
+
+}
+
+
+
+.card h2{
+
+font-size:32px;
+
+margin-bottom:25px;
+
+}
+
+
+.card p{
+
+color:#888;
+
+margin-bottom:25px;
+
+}
+
+
+
+.price{
+
+display:flex;
+
+justify-content:space-between;
+
+padding:15px 0;
+
+border-bottom:1px solid #292929;
+
+font-size:19px;
+
+}
+
+
+
+.sale{
+
+color:#8b5cf6;
+
+font-weight:bold;
+
+}
+
+
+.old{
+
+color:#777;
+
+text-decoration:line-through;
+
+}
+
+
+
+.buy{
+
+display:block;
+
+margin-top:30px;
+
+padding:15px;
+
+text-align:center;
+
+border-radius:15px;
+
+background:#8b5cf6;
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+
+.buy:hover{
+
+background:#a78bfa;
+
+}
+
+
+
+/* FEATURES */
+
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+
+.feature{
+
+background:#111;
+
+padding:35px;
+
+border-radius:25px;
+
+border:1px solid #222;
+
+text-align:center;
+
+}
+
+
+
+.feature h3{
+
+color:#8b5cf6;
+
+margin-bottom:15px;
+
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+
+background:#030303;
+
+padding:60px;
+
+text-align:center;
+
+}
+
+
+footer span{
+
+color:#8b5cf6;
+
+font-weight:bold;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+<div class="logo">
+ANTER <span>RESELLING</span>
+</div>
+
+
+<div>
+
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#support">Support</a>
+
+</div>
+
+</nav>
+
+
+
+
+<div class="hero">
+
+
+<div class="hero-box">
+
+
+<h1>
+ANTER <span>RESELLING</span>
+</h1>
+
+
+<p>
+Premium GTA Services • Fast Support • Discord Orders
+</p>
+
+
+<a class="discord" href="https://discord.gg/VVbnkdupMX">
+Discord Beitreten
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<section id="products">
+
+
+<h1 class="title">
+🛒 Products
+</h1>
+
+
+<div class="products">
+
+
+<div class="card">
+
+<h2>Susano</h2>
+
+<p>Spoofer inklusive</p>
+
+
+<div class="price">
+Month
+<span class="sale">16,99€</span>
+</div>
+
+<div class="price">
+Quarterly
+<span class="sale">23,99€</span>
+</div>
+
+<div class="price">
+Lifetime
+<span class="sale">29,99€</span>
+</div>
+
+
+<a class="buy" href="https://discord.gg/VVbnkdupMX">
+Kaufen
+</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2>Ham Vanity Bundle</h2>
+
+<p>Premium Bundle</p>
+
+
+<div class="price">
+Week <span>19,99€</span>
+</div>
+
+<div class="price">
+Month <span>34,99€</span>
+</div>
+
+<div class="price">
+Lifetime <span>59,99€</span>
+</div>
+
+
+<a class="buy" href="https://discord.gg/VVbnkdupMX">
+Kaufen
+</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2>Vanity Menü</h2>
+
+<div class="price">
+Week <span>9,99€</span>
+</div>
+
+<div class="price">
+Month <span>19,99€</span>
+</div>
+
+<div class="price">
+Lifetime <span>29,99€</span>
+</div>
+
+
+<a class="buy" href="https://discord.gg/VVbnkdupMX">
+Kaufen
+</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2>HamMafia Spoofer</h2>
+
+
+<div class="price">
+Week <span>6,99€</span>
+</div>
+
+<div class="price">
+Month <span>13,99€</span>
+</div>
+
+<div class="price">
+Lifetime <span>37,99€</span>
+</div>
+
+
+<a class="buy" href="https://discord.gg/VVbnkdupMX">
+Kaufen
+</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2>TZ Project International</h2>
+
+<div class="price">
+Lifetime
+<span class="sale">29,99€</span>
+</div>
+
+
+<a class="buy" href="https://discord.gg/VVbnkdupMX">
+Kaufen
+</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2>TZ Project External</h2>
+
+
+<div class="price">
+Lifetime
+<span class="sale">19,99€</span>
+</div>
+
+
+<a class="buy" href="https://discord.gg/VVbnkdupMX">
+Kaufen
+</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2>TZ Project Spoofer</h2>
+
+
+<div class="price">
+Lifetime
+<span class="sale">14,99€</span>
+</div>
+
+
+<a class="buy" href="https://discord.gg/VVbnkdupMX">
+Kaufen
+</a>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<section id="support">
+
+<h1 class="title">
+Warum Anter?
+</h1>
+
+
+<div class="features">
+
+
+<div class="feature">
+<h3>⚡ Schnell</h3>
+<p>Schnelle Abwicklung über Discord.</p>
+</div>
+
+
+<div class="feature">
+<h3>💬 Support</h3>
+<p>Direkter Kontakt.</p>
+</div>
+
+
+<div class="feature">
+<h3>⭐ Premium</h3>
+<p>Professionelles Design.</p>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<footer>
+
+
+<h2>
+ANTER RESELLING
+</h2>
+
+
+<p>
+Discord:
+</p>
+
+
+<span>
+Abuballermann_<br>
+t9trixo
+</span>
+
+
+<br><br>
+
+
+<a class="discord" href="https://discord.gg/VVbnkdupMX">
+Discord Server
+</a>
+
+
+</footer>
+
+
+</body>
+</html>
