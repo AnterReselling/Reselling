@@ -17,6 +17,61 @@ box-sizing:border-box;
 font-family:Arial, sans-serif;
 }
 
+  <script>
+
+let allCoupons = [];
+let activeCoupon = null;
+
+
+// Coupons laden
+
+fetch("coupons.json")
+.then(response => response.json())
+.then(data => {
+
+    allCoupons = data;
+
+});
+
+
+
+function applyCoupon(){
+
+let input =
+document.getElementById("couponCode").value
+.toUpperCase()
+.trim();
+
+
+let found =
+allCoupons.find(c => c.code === input);
+
+
+
+if(found && !found.used){
+
+
+activeCoupon = found;
+
+
+document.getElementById("couponMessage").innerHTML =
+"✅ Coupon aktiviert: -" + found.value + "€ Rabatt";
+
+
+}
+else{
+
+
+document.getElementById("couponMessage").innerHTML =
+"❌ Coupon ungültig oder bereits benutzt";
+
+
+}
+
+}
+
+
+</script>
 body{
 
 background:#050505;
@@ -751,3 +806,11 @@ width:130px;
 </body>
 
 </html>
+
+<input id="couponCode" placeholder="ANTER-XXXXXXXX">
+
+<button onclick="applyCoupon()">
+Einlösen
+</button>
+
+<p id="couponMessage"></p>
