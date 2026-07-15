@@ -9,6 +9,9 @@
 
 <title>ANTER RESELLING</title>
 
+<meta name="description" content="ANTER RESELLING - Premium Gaming Services">
+
+
 <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
@@ -31,8 +34,8 @@ body{
 
     background:
     linear-gradient(
-        rgba(0,0,0,.85),
-        rgba(0,0,0,.95)
+        rgba(0,0,0,.88),
+        rgba(0,0,0,.96)
     ),
     url("https://images.unsplash.com/photo-1542751371-adc38448a05e");
 
@@ -46,27 +49,25 @@ body{
 
 
 
+/* NAV */
+
 nav{
+
+    position:sticky;
+    top:0;
+    z-index:1000;
 
     width:100%;
 
-    padding:25px 8%;
+    padding:20px 8%;
 
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 
-    position:sticky;
+    background:rgba(0,0,0,.75);
 
-    top:0;
-
-    z-index:100;
-
-    background:rgba(0,0,0,.65);
-
-    backdrop-filter:blur(15px);
+    backdrop-filter:blur(20px);
 
     border-bottom:1px solid #222;
 
@@ -88,7 +89,7 @@ nav{
 
     text-decoration:none;
 
-    margin-left:30px;
+    margin-left:25px;
 
     transition:.3s;
 
@@ -106,6 +107,9 @@ nav{
 
 
 
+/* HERO */
+
+
 .hero{
 
     min-height:90vh;
@@ -116,12 +120,11 @@ nav{
 
     align-items:center;
 
-    text-align:center;
-
     padding:40px;
 
-}
+    text-align:center;
 
+}
 
 
 
@@ -131,21 +134,22 @@ nav{
 
     padding:70px 50px;
 
-    background:rgba(15,15,15,.75);
-
-    border:1px solid rgba(255,255,255,.12);
+    background:
+    rgba(20,20,20,.75);
 
     border-radius:35px;
 
+    border:1px solid rgba(255,255,255,.12);
+
     backdrop-filter:blur(20px);
 
-    animation:show 1s ease;
+    animation:fade .9s ease;
 
 }
 
 
 
-@keyframes show{
+@keyframes fade{
 
 from{
 
@@ -167,11 +171,12 @@ transform:translateY(0);
 
 
 
+
 .hero-logo{
 
     width:260px;
 
-    margin-bottom:35px;
+    margin-bottom:30px;
 
 }
 
@@ -207,23 +212,24 @@ transform:translateY(0);
 
 
 
+
 .discord-btn{
 
     display:inline-block;
 
-    margin-top:40px;
+    margin-top:35px;
 
-    padding:17px 45px;
+    padding:16px 45px;
 
     background:#5865F2;
 
-    border-radius:14px;
-
     color:white;
+
+    border-radius:14px;
 
     text-decoration:none;
 
-    font-weight:700;
+    font-weight:bold;
 
     transition:.3s;
 
@@ -241,6 +247,30 @@ transform:translateY(0);
 
 
 
+
+/* GENERAL */
+
+
+section{
+
+    padding:90px 8%;
+
+}
+
+
+
+.section-title{
+
+    text-align:center;
+
+    font-size:45px;
+
+    margin-bottom:60px;
+
+}
+
+
+
 </style>
 
 </head>
@@ -249,7 +279,9 @@ transform:translateY(0);
 <body>
 
 
+
 <nav>
+
 
 <div class="logo">
 
@@ -258,9 +290,10 @@ transform:translateY(0);
 </div>
 
 
+
 <div class="nav-links">
 
-<a href="#">Home</a>
+<a href="#home">Home</a>
 
 <a href="#products">Products</a>
 
@@ -273,7 +306,9 @@ transform:translateY(0);
 
 
 
-<div class="hero">
+
+
+<section class="hero" id="home">
 
 
 <div class="hero-box">
@@ -283,73 +318,77 @@ transform:translateY(0);
 
 
 <h1>
+
 ANTER <span>RESELLING</span>
+
 </h1>
 
 
+
 <p>
+
 Premium GTA Services • Fast Support • Easy Ordering
+
 </p>
 
 
-<a class="discord-btn" href="https://discord.gg/VVbnkdupMX" target="_blank">
+
+<a class="discord-btn"
+href="https://discord.gg/VVbnkdupMX"
+target="_blank">
+
 Join Discord
+
 </a>
 
 
-</div>
-
 
 </div>
-```
-```html
+
+```html id="9kq8tp"
 <section id="products">
 
+
+<h2 class="section-title">
+
+🛒 Products
+
+</h2>
+
+
+
+
 <style>
-
-section{
-    padding:90px 8%;
-}
-
-
-.section-title{
-
-    text-align:center;
-    font-size:45px;
-    margin-bottom:60px;
-
-}
-
 
 
 .products{
 
-    display:grid;
+display:grid;
 
-    grid-template-columns:
-    repeat(auto-fit,minmax(360px,1fr));
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
 
-    gap:35px;
+gap:35px;
 
 }
+
 
 
 
 .card{
 
-    background:rgba(15,15,15,.85);
+background:
+rgba(15,15,15,.85);
 
-    border:1px solid #242424;
+border:1px solid #252525;
 
-    border-radius:28px;
+border-radius:28px;
 
-    padding:40px;
+padding:35px;
 
-    min-height:350px;
+transition:.35s;
 
-    transition:.35s;
-
-    backdrop-filter:blur(15px);
+backdrop-filter:blur(15px);
 
 }
 
@@ -357,12 +396,12 @@ section{
 
 .card:hover{
 
-    transform:translateY(-12px);
+transform:translateY(-10px);
 
-    border-color:#8b5cf6;
+border-color:#8b5cf6;
 
-    box-shadow:
-    0 20px 60px rgba(139,92,246,.25);
+box-shadow:
+0 20px 60px rgba(139,92,246,.25);
 
 }
 
@@ -370,9 +409,9 @@ section{
 
 .card h2{
 
-    font-size:30px;
+font-size:28px;
 
-    margin-bottom:20px;
+margin-bottom:15px;
 
 }
 
@@ -380,9 +419,9 @@ section{
 
 .card p{
 
-    color:#888;
+color:#888;
 
-    margin-bottom:25px;
+margin-bottom:25px;
 
 }
 
@@ -390,23 +429,23 @@ section{
 
 .price{
 
-    display:flex;
+display:flex;
 
-    justify-content:space-between;
+justify-content:space-between;
 
-    padding:14px 0;
+padding:14px 0;
 
-    border-bottom:1px solid #252525;
+border-bottom:1px solid #252525;
+
+color:#ddd;
 
 }
 
 
 
-.sale{
+.price b{
 
-    color:#8b5cf6;
-
-    font-weight:bold;
+color:#8b5cf6;
 
 }
 
@@ -414,23 +453,25 @@ section{
 
 .buy{
 
-    display:block;
+display:block;
 
-    margin-top:30px;
+margin-top:25px;
 
-    padding:15px;
+padding:15px;
 
-    text-align:center;
+text-align:center;
 
-    border-radius:12px;
+background:#8b5cf6;
 
-    background:#8b5cf6;
+color:white;
 
-    color:white;
+border-radius:12px;
 
-    text-decoration:none;
+text-decoration:none;
 
-    font-weight:bold;
+font-weight:bold;
+
+transition:.3s;
 
 }
 
@@ -438,21 +479,21 @@ section{
 
 .buy:hover{
 
-    background:#a78bfa;
+background:#a78bfa;
 
 }
+
+
 
 </style>
 
 
 
-<h2 class="section-title">
-🛒 Products
-</h2>
-
 
 
 <div class="products">
+
+
 
 
 
@@ -464,25 +505,37 @@ section{
 
 
 <div class="price">
+
 <span>Month</span>
-<span class="sale">16,99€</span>
+
+<b>16,99€</b>
+
 </div>
 
 
 <div class="price">
+
 <span>Quarterly</span>
-<span class="sale">23,99€</span>
+
+<b>23,99€</b>
+
 </div>
 
 
 <div class="price">
+
 <span>Lifetime</span>
-<span class="sale">29,99€</span>
+
+<b>29,99€</b>
+
 </div>
 
 
-<a class="buy" href="https://discord.gg/VVbnkdupMX">
+<a class="buy"
+href="https://discord.gg/VVbnkdupMX">
+
 Buy Now
+
 </a>
 
 </div>
@@ -491,36 +544,55 @@ Buy Now
 
 
 
+
+
 <div class="card">
 
+
 <h2>Ham Vanity Bundle</h2>
+
 
 <p>Premium Bundle</p>
 
 
 <div class="price">
+
 <span>Week</span>
-<span>19,99€</span>
+
+<b>19,99€</b>
+
 </div>
 
 
 <div class="price">
+
 <span>Month</span>
-<span>34,99€</span>
+
+<b>34,99€</b>
+
 </div>
 
 
 <div class="price">
+
 <span>Lifetime</span>
-<span>59,99€</span>
+
+<b>59,99€</b>
+
 </div>
 
 
-<a class="buy" href="https://discord.gg/VVbnkdupMX">
+<a class="buy"
+href="https://discord.gg/VVbnkdupMX">
+
 Buy Now
+
 </a>
 
+
 </div>
+
+
 
 
 
@@ -529,34 +601,56 @@ Buy Now
 
 <div class="card">
 
+
 <h2>Vanity Menü</h2>
+
 
 <p>Premium Menu</p>
 
 
+
 <div class="price">
+
 <span>Week</span>
-<span>9,99€</span>
+
+<b>9,99€</b>
+
 </div>
 
 
+
 <div class="price">
+
 <span>Month</span>
-<span>19,99€</span>
+
+<b>19,99€</b>
+
 </div>
+
 
 
 <div class="price">
+
 <span>Lifetime</span>
-<span>29,99€</span>
+
+<b>29,99€</b>
+
 </div>
 
 
-<a class="buy" href="https://discord.gg/VVbnkdupMX">
+
+<a class="buy"
+href="https://discord.gg/VVbnkdupMX">
+
 Buy Now
+
 </a>
 
+
 </div>
+
+
+
 
 
 
@@ -565,34 +659,56 @@ Buy Now
 
 <div class="card">
 
+
 <h2>HamMafia Spoofer</h2>
+
 
 <p>Hardware Spoofer</p>
 
 
+
 <div class="price">
+
 <span>Week</span>
-<span>6,99€</span>
+
+<b>6,99€</b>
+
 </div>
 
 
+
 <div class="price">
+
 <span>Month</span>
-<span>13,99€</span>
+
+<b>13,99€</b>
+
 </div>
+
 
 
 <div class="price">
+
 <span>Lifetime</span>
-<span>37,99€</span>
+
+<b>37,99€</b>
+
 </div>
 
 
-<a class="buy" href="https://discord.gg/VVbnkdupMX">
+
+<a class="buy"
+href="https://discord.gg/VVbnkdupMX">
+
 Buy Now
+
 </a>
 
+
 </div>
+
+
+
 
 
 
@@ -600,29 +716,36 @@ Buy Now
 
 
 <div class="card">
+
 
 <h2>TZ Project International Client</h2>
 
+
 <p>Lifetime Access</p>
 
 
 <div class="price">
-<span>Normal</span>
-<span><s>49,99€</s></span>
-</div>
 
-
-<div class="price">
 <span>SALE</span>
-<span class="sale">29,99€</span>
+
+<b>29,99€</b>
+
 </div>
 
 
-<a class="buy" href="https://discord.gg/VVbnkdupMX">
+
+<a class="buy"
+href="https://discord.gg/VVbnkdupMX">
+
 Buy Now
+
 </a>
 
+
 </div>
+
+
+
 
 
 
@@ -630,29 +753,36 @@ Buy Now
 
 
 <div class="card">
+
 
 <h2>TZ Project External Client</h2>
 
+
 <p>Lifetime Access</p>
 
 
 <div class="price">
-<span>Normal</span>
-<span><s>24,99€</s></span>
-</div>
 
-
-<div class="price">
 <span>SALE</span>
-<span class="sale">19,99€</span>
+
+<b>19,99€</b>
+
 </div>
 
 
-<a class="buy" href="https://discord.gg/VVbnkdupMX">
+
+<a class="buy"
+href="https://discord.gg/VVbnkdupMX">
+
 Buy Now
+
 </a>
 
+
 </div>
+
+
+
 
 
 
@@ -661,28 +791,33 @@ Buy Now
 
 <div class="card">
 
+
 <h2>TZ Project Spoofer</h2>
+
 
 <p>Lifetime Access</p>
 
 
 <div class="price">
-<span>Normal</span>
-<span><s>19,99€</s></span>
-</div>
 
-
-<div class="price">
 <span>SALE</span>
-<span class="sale">14,99€</span>
+
+<b>14,99€</b>
+
 </div>
 
 
-<a class="buy" href="https://discord.gg/VVbnkdupMX">
+
+<a class="buy"
+href="https://discord.gg/VVbnkdupMX">
+
 Buy Now
+
 </a>
 
+
 </div>
+
 
 
 
@@ -691,58 +826,193 @@ Buy Now
 
 </section>
 ```
-```html id="m8p4xq"
+```html
+<style>
+
+
+@media(max-width:700px){
+
+
+nav{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+
+.nav-links{
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+
+.nav-links a{
+
+margin:8px;
+
+}
+
+
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+
+
+.hero-box{
+
+padding:45px 25px;
+
+}
+
+
+
+.hero-logo{
+
+width:200px;
+
+}
+
+
+}
+
+
+
+footer{
+
+padding:80px 8%;
+
+text-align:center;
+
+background:rgba(0,0,0,.75);
+
+border-top:1px solid #222;
+
+}
+
+
+footer h2{
+
+font-size:40px;
+
+}
+
+
+
+footer p{
+
+color:#888;
+
+margin-top:15px;
+
+}
+
+
+</style>
+
+
+
+
+
+
 <section id="support">
 
 
 <h2 class="section-title">
+
 ⭐ Why Choose Us
+
 </h2>
+
 
 
 
 <div class="products">
 
 
+
 <div class="card">
 
-<h2>⚡ Fast Delivery</h2>
+
+<h2>
+
+⚡ Fast Delivery
+
+</h2>
+
 
 <p>
+
 Schnelle Abwicklung und Kontakt über Discord.
+
 </p>
+
 
 </div>
 
 
 
+
+
 <div class="card">
 
-<h2>💬 Support</h2>
+
+<h2>
+
+💬 Support
+
+</h2>
+
 
 <p>
+
 Bei Fragen erreichst du uns direkt über Discord.
+
 </p>
 
+
 </div>
+
+
 
 
 
 <div class="card">
 
-<h2>🔒 Premium Service</h2>
+
+<h2>
+
+🔒 Premium Service
+
+</h2>
+
 
 <p>
+
 Professioneller Auftritt und einfache Bestellung.
+
 </p>
 
+
 </div>
+
 
 
 </div>
 
 
 </section>
+
 
 
 
@@ -754,8 +1024,12 @@ Professioneller Auftritt und einfache Bestellung.
 
 
 <h2 class="section-title">
+
 ❓ FAQ
+
 </h2>
+
+
 
 
 
@@ -763,12 +1037,16 @@ Professioneller Auftritt und einfache Bestellung.
 
 
 <h2>
+
 Wie kaufe ich ein Produkt?
+
 </h2>
 
 
 <p>
-Klicke bei deinem gewünschten Produkt auf "Buy Now" und du wirst zu unserem Discord weitergeleitet.
+
+Klicke auf "Buy Now" und du wirst zu unserem Discord weitergeleitet.
+
 </p>
 
 
@@ -780,16 +1058,22 @@ Klicke bei deinem gewünschten Produkt auf "Buy Now" und du wirst zu unserem Dis
 
 
 
+
+
 <div class="card">
 
 
 <h2>
+
 Wo bekomme ich Support?
+
 </h2>
 
 
 <p>
+
 Unser Support läuft über Discord.
+
 </p>
 
 
@@ -801,24 +1085,31 @@ Unser Support läuft über Discord.
 
 
 
+
+
 <div class="card">
 
 
 <h2>
+
 Wie funktioniert die Bestellung?
+
 </h2>
 
 
 <p>
+
 Schreibe uns auf Discord und wir helfen dir weiter.
+
 </p>
 
 
 </div>
+
+
 
 
 </section>
-
 
 
 
@@ -830,13 +1121,18 @@ Schreibe uns auf Discord und wir helfen dir weiter.
 
 
 <h2>
+
 ANTER RESELLING
+
 </h2>
 
 
 
-<p style="color:#888;margin-top:15px;">
+
+<p>
+
 Premium Gaming Services
+
 </p>
 
 
@@ -845,15 +1141,16 @@ Premium Gaming Services
 
 
 
+
 <p>
+
 Discord:
+
 </p>
 
 
 
-<p>
-
-<span style="color:#8b5cf6;font-weight:bold;">
+<p style="color:#8b5cf6;font-weight:bold;">
 
 Abuballermann_
 
@@ -861,19 +1158,16 @@ Abuballermann_
 
 t9trixo
 
-</span>
-
 </p>
 
 
 
 
-<br>
+<a class="discord-btn"
 
+href="https://discord.gg/VVbnkdupMX"
 
-
-
-<a class="discord-btn" href="https://discord.gg/VVbnkdupMX" target="_blank">
+target="_blank">
 
 Discord Server
 
@@ -882,7 +1176,8 @@ Discord Server
 
 
 
-<p style="color:#555;margin-top:40px;">
+
+<p style="margin-top:40px;color:#555;">
 
 © 2026 ANTER RESELLING
 
@@ -894,7 +1189,11 @@ Discord Server
 
 
 
+
 </body>
 
 </html>
+```
+
+</section>
 ```
