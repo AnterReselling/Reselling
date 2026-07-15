@@ -6,383 +6,230 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ANTER RESELLING</title>
+<title>Anter Reselling</title>
 
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
-
-
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Inter,Arial,sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
 }
-
-
-html{
-    scroll-behavior:smooth;
-}
-
 
 body{
 
-    background:
-    linear-gradient(
-        rgba(0,0,0,.85),
-        rgba(0,0,0,.95)
-    ),
-    url("https://images.unsplash.com/photo-1542751371-adc38448a05e");
-
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-
-    color:white;
+background:#050505;
+color:white;
 
 }
 
 
+header{
 
-/* NAVIGATION */
+padding:40px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
 
-
-nav{
-
-    width:100%;
-
-    padding:25px 8%;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    position:sticky;
-
-    top:0;
-
-    z-index:100;
-
-    background:rgba(0,0,0,.65);
-
-    backdrop-filter:blur(15px);
-
-    border-bottom:1px solid #222;
+border-bottom:1px solid #222;
 
 }
 
 
 .logo img{
 
-    width:150px;
+width:170px;
 
 }
 
 
-.nav-links a{
+.cart-btn{
 
-    color:#aaa;
-
-    text-decoration:none;
-
-    margin-left:30px;
-
-    transition:.3s;
-
-}
-
-
-.nav-links a:hover{
-
-    color:white;
+background:#8b5cf6;
+padding:12px 25px;
+border-radius:10px;
+text-decoration:none;
+color:white;
+cursor:pointer;
 
 }
-
-
-
-/* HERO */
 
 
 .hero{
 
-    min-height:90vh;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    text-align:center;
-
-    padding:40px;
+text-align:center;
+padding:80px 20px;
 
 }
-
-
-
-.hero-box{
-
-    max-width:900px;
-
-    padding:70px 50px;
-
-    background:rgba(15,15,15,.75);
-
-    border:1px solid rgba(255,255,255,.12);
-
-    border-radius:35px;
-
-    backdrop-filter:blur(20px);
-
-    animation:show 1s ease;
-
-}
-
-
-
-@keyframes show{
-
-from{
-
-opacity:0;
-
-transform:translateY(40px);
-
-}
-
-to{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-}
-
-
-
-.hero-logo{
-
-    width:260px;
-
-    margin-bottom:35px;
-
-}
-
 
 
 .hero h1{
 
-    font-size:65px;
-
-    font-weight:800;
+font-size:60px;
 
 }
 
 
+.hero span{
 
-.hero h1 span{
-
-    color:#8b5cf6;
+color:#8b5cf6;
 
 }
-
 
 
 .hero p{
 
-    margin-top:25px;
-
-    color:#aaa;
-
-    font-size:20px;
+color:#aaa;
+margin-top:20px;
+font-size:20px;
 
 }
-
-
-
-.discord-btn{
-
-    display:inline-block;
-
-    margin-top:40px;
-
-    padding:17px 45px;
-
-    background:#5865F2;
-
-    border-radius:14px;
-
-    color:white;
-
-    text-decoration:none;
-
-    font-weight:700;
-
-    transition:.3s;
-
-}
-
-
-
-.discord-btn:hover{
-
-    transform:scale(1.05);
-
-    box-shadow:0 0 30px #5865F2;
-
-}
-
-
-
-/* SECTIONS */
-
-
-section{
-
-    padding:90px 8%;
-
-}
-
-
-.section-title{
-
-    text-align:center;
-
-    font-size:45px;
-
-    margin-bottom:60px;
-
-}
-
-
-
-/* PRODUCTS */
 
 
 .products{
 
-    display:grid;
+max-width:1200px;
+margin:auto;
+padding:40px 20px;
 
-    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
-
-    gap:35px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
 
 }
-
 
 
 .card{
 
-    background:rgba(15,15,15,.85);
+background:#111;
 
-    border:1px solid #242424;
+border:1px solid #222;
 
-    border-radius:28px;
+border-radius:20px;
 
-    padding:40px;
-
-    min-height:350px;
-
-    transition:.35s;
-
-    backdrop-filter:blur(15px);
+padding:30px;
 
 }
-
 
 
 .card:hover{
 
-    transform:translateY(-12px);
-
-    border-color:#8b5cf6;
-
-    box-shadow:0 20px 60px rgba(139,92,246,.25);
+border-color:#8b5cf6;
 
 }
-
 
 
 .card h2{
 
-    font-size:30px;
-
-    margin-bottom:20px;
+margin-bottom:20px;
 
 }
-
-
-
-.card p{
-
-    color:#888;
-
-    margin-bottom:25px;
-
-}
-
 
 
 .price{
 
-    display:flex;
-
-    justify-content:space-between;
-
-    padding:14px 0;
-
-    border-bottom:1px solid #252525;
-
-    color:#ddd;
+font-size:22px;
+color:#8b5cf6;
+font-weight:bold;
 
 }
 
 
+button{
 
-.sale{
-
-    color:#8b5cf6;
-
-    font-weight:bold;
+border:none;
+cursor:pointer;
 
 }
 
 
-.buy{
+.add{
 
-    display:block;
+width:100%;
 
-    margin-top:30px;
+margin-top:25px;
 
-    padding:15px;
+padding:15px;
 
-    text-align:center;
+background:#8b5cf6;
 
-    border-radius:12px;
+color:white;
 
-    background:#8b5cf6;
+border-radius:10px;
 
-    color:white;
-
-    text-decoration:none;
-
-    font-weight:bold;
-
-    transition:.3s;
+font-weight:bold;
 
 }
 
 
+.cart{
 
-.buy:hover{
+position:fixed;
 
-    background:#a78bfa;
+right:20px;
+
+top:90px;
+
+width:350px;
+
+background:#111;
+
+border:1px solid #333;
+
+border-radius:20px;
+
+padding:25px;
+
+display:none;
+
+z-index:100;
+
+}
+
+
+.cart.active{
+
+display:block;
+
+}
+
+
+.cart-item{
+
+padding:15px 0;
+
+border-bottom:1px solid #333;
+
+}
+
+
+.total{
+
+font-size:22px;
+
+margin-top:20px;
+
+}
+
+
+.checkout{
+
+display:block;
+
+text-align:center;
+
+margin-top:20px;
+
+padding:15px;
+
+background:#5865F2;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:10px;
 
 }
 
@@ -396,77 +243,42 @@ section{
 <body>
 
 
-<nav>
+<header>
+
 
 <div class="logo">
 
-<img src="https://cdn.discordapp.com/attachments/1521218534456430613/1524124508921925754/ANTER_RESELLING.png?ex=6a59270f&is=6a57d58f&hm=0ba90e5a18065ff71ce17c3aceef46e6b342b8c4b05849bfb6e05acf3002b928">
+<img src="https://cdn.discordapp.com/attachments/1521218534456430613/1524124508921925754/ANTER_RESELLING.png">
 
 </div>
 
 
-<div class="nav-links">
+<div class="cart-btn" onclick="openCart()">
 
-<a href="#">Home</a>
-
-<a href="#products">Products</a>
-
-<a href="#support">Support</a>
+🛒 Warenkorb (<span id="count">0</span>)
 
 </div>
 
-</nav>
 
-
-
+</header>
 
 
 <div class="hero">
-
-
-<div class="hero-box">
-
-
-<img class="hero-logo" src="https://cdn.discordapp.com/attachments/1521218534456430613/1524124508921925754/ANTER_RESELLING.png?ex=6a59270f&is=6a57d58f&hm=0ba90e5a18065ff71ce17c3aceef46e6b342b8c4b05849bfb6e05acf3002b928">
-
 
 <h1>
 ANTER <span>RESELLING</span>
 </h1>
 
-
 <p>
-Premium GTA Services • Fast Support • Easy Ordering
+Premium GTA Services • Einfach bestellen • Schneller Support
 </p>
 
-
-<a class="discord-btn" href="https://discord.gg/VVbnkdupMX" target="_blank">
-Join Discord
-</a>
-
-
 </div>
 
-
-</div>
-
-
-
-
-
-
-<section id="products">
-
-
-<h2 class="section-title">
-🛒 Products
-</h2>
 
 
 
 <div class="products">
-
-
 
 
 
@@ -476,149 +288,81 @@ Join Discord
 
 <p>Spoofer inklusive</p>
 
-
 <div class="price">
-<span>Month</span>
-<span class="sale">16,99€</span>
+16,99€ - 29,99€
 </div>
 
-
-<div class="price">
-<span>Quarterly</span>
-<span class="sale">23,99€</span>
-</div>
-
-
-<div class="price">
-<span>Lifetime</span>
-<span class="sale">29,99€</span>
-</div>
-
-
-<a class="buy" href="https://discord.gg/VVbnkdupMX">
-Buy Now
-</a>
-
+<button class="add" onclick="addCart('Susano Lifetime',29.99)">
+In den Warenkorb
+</button>
 
 </div>
-
-
 
 
 
 
 
 <div class="card">
-
 
 <h2>Ham Vanity Bundle</h2>
 
 <p>Premium Bundle</p>
 
-
 <div class="price">
-<span>Week</span>
-<span>19,99€</span>
+19,99€ - 59,99€
 </div>
 
 
-<div class="price">
-<span>Month</span>
-<span>34,99€</span>
-</div>
-
-
-<div class="price">
-<span>Lifetime</span>
-<span>59,99€</span>
-</div>
-
-
-<a class="buy" href="https://discord.gg/VVbnkdupMX">
-Buy Now
-</a>
+<button class="add" onclick="addCart('Ham Vanity Bundle Lifetime',59.99)">
+In den Warenkorb
+</button>
 
 
 </div>
-
-
 
 
 
 
 
 <div class="card">
-
 
 <h2>Vanity Menü</h2>
 
-<p>Premium Menu</p>
-
-
-<div class="price">
-<span>Week</span>
-<span>9,99€</span>
-</div>
-
+<p>Premium Menü</p>
 
 <div class="price">
-<span>Month</span>
-<span>19,99€</span>
+9,99€ - 29,99€
 </div>
 
 
-<div class="price">
-<span>Lifetime</span>
-<span>29,99€</span>
-</div>
-
-
-<a class="buy" href="https://discord.gg/VVbnkdupMX">
-Buy Now
-</a>
+<button class="add" onclick="addCart('Vanity Menü Lifetime',29.99)">
+In den Warenkorb
+</button>
 
 
 </div>
-
-
 
 
 
 
 
 <div class="card">
-
 
 <h2>HamMafia Spoofer</h2>
 
-<p>Hardware Spoofer</p>
-
-
-<div class="price">
-<span>Week</span>
-<span>6,99€</span>
-</div>
-
+<p>Spoofer</p>
 
 <div class="price">
-<span>Month</span>
-<span>13,99€</span>
+6,99€ - 37,99€
 </div>
 
 
-<div class="price">
-<span>Lifetime</span>
-<span>37,99€</span>
-</div>
-
-
-<a class="buy" href="https://discord.gg/VVbnkdupMX">
-Buy Now
-</a>
+<button class="add" onclick="addCart('HamMafia Spoofer Lifetime',37.99)">
+In den Warenkorb
+</button>
 
 
 </div>
-
 
 
 
@@ -627,41 +371,21 @@ Buy Now
 
 <div class="card">
 
+<h2>TZ Project International</h2>
 
-<h2>TZ Project International Client</h2>
-
-<p>Lifetime Access</p>
-
+<p>Lifetime Client</p>
 
 <div class="price">
-
-<span>Normal</span>
-
-<span>
-<s>49,99€</s>
-</span>
-
-</div>
-
-
-<div class="price">
-
-<span>SALE</span>
-
-<span class="sale">
 29,99€
-</span>
-
 </div>
 
 
-<a class="buy" href="https://discord.gg/VVbnkdupMX">
-Buy Now
-</a>
+<button class="add" onclick="addCart('TZ Project International',29.99)">
+In den Warenkorb
+</button>
 
 
 </div>
-
 
 
 
@@ -670,37 +394,18 @@ Buy Now
 
 <div class="card">
 
+<h2>TZ Project External</h2>
 
-<h2>TZ Project External Client</h2>
-
-<p>Lifetime Access</p>
-
+<p>Lifetime Client</p>
 
 <div class="price">
-
-<span>Normal</span>
-
-<span>
-<s>24,99€</s>
-</span>
-
-</div>
-
-
-<div class="price">
-
-<span>SALE</span>
-
-<span class="sale">
 19,99€
-</span>
-
 </div>
 
 
-<a class="buy" href="https://discord.gg/VVbnkdupMX">
-Buy Now
-</a>
+<button class="add" onclick="addCart('TZ Project External',19.99)">
+In den Warenkorb
+</button>
 
 
 </div>
@@ -712,37 +417,55 @@ Buy Now
 
 
 <div class="card">
-
 
 <h2>TZ Project Spoofer</h2>
 
-<p>Lifetime Access</p>
-
-
-<div class="price">
-
-<span>Normal</span>
-
-<span>
-<s>19,99€</s>
-</span>
-
-</div>
-
+<p>Lifetime Spoofer</p>
 
 <div class="price">
-
-<span>SALE</span>
-
-<span class="sale">
 14,99€
-</span>
+</div>
+
+
+<button class="add" onclick="addCart('TZ Project Spoofer',14.99)">
+In den Warenkorb
+</button>
+
 
 </div>
 
 
-<a class="buy" href="https://discord.gg/VVbnkdupMX">
-Buy Now
+
+</div>
+
+
+
+
+
+
+<div class="cart" id="cart">
+
+
+<h2>
+🛒 Warenkorb
+</h2>
+
+
+<div id="items">
+
+</div>
+
+
+<div class="total">
+
+Zwischensumme:
+<span id="total">0</span>€
+
+</div>
+
+
+<a class="checkout" onclick="checkout()" href="#">
+Zur Kasse
 </a>
 
 
@@ -751,150 +474,162 @@ Buy Now
 
 
 
-</div>
+
+<script>
 
 
-</section>
-
-
-
-
-
-<section id="support">
-
-
-<h2 class="section-title">
-⭐ Why Choose Us
-</h2>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 
 
-<div class="products">
+function save(){
 
+localStorage.setItem(
+"cart",
+JSON.stringify(cart)
+);
 
-<div class="card">
-
-<h2>⚡ Fast Delivery</h2>
-
-<p>
-Schnelle Abwicklung und Kontakt über Discord.
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h2>💬 Support</h2>
-
-<p>
-Bei Fragen erreichst du uns direkt über Discord.
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h2>🔒 Premium Service</h2>
-
-<p>
-Professioneller Auftritt und einfache Bestellung.
-</p>
-
-</div>
-
-
-
-</div>
-
-
-</section>
+}
 
 
 
 
+function addCart(name,price){
+
+
+cart.push({
+
+name:name,
+price:price
+
+});
+
+
+save();
+
+updateCart();
+
+
+alert(name+" wurde hinzugefügt!");
+
+}
 
 
 
-<section>
+
+function updateCart(){
 
 
-<h2 class="section-title">
-❓ FAQ
-</h2>
+let items=document.getElementById("items");
+
+let total=0;
 
 
-
-<div class="card">
-
-
-<h2>
-Wie kaufe ich ein Produkt?
-</h2>
+items.innerHTML="";
 
 
-<p>
-Klicke bei deinem gewünschten Produkt auf "Buy Now" und du wirst zu unserem Discord weitergeleitet.
-</p>
+cart.forEach((item,index)=>{
 
 
-</div>
+total+=item.price;
 
 
+items.innerHTML += `
+
+<div class="cart-item">
+
+${item.name}
 
 <br>
 
-
-
-<div class="card">
-
-
-<h2>
-Wo bekomme ich Support?
-</h2>
-
-
-<p>
-Unser Support läuft über Discord.
-</p>
-
+${item.price.toFixed(2)}€
 
 </div>
 
+`;
 
-<br>
-
-
-
-<div class="card">
+});
 
 
-<h2>
-Wie funktioniert die Bestellung?
-</h2>
-
-
-<p>
-Schreibe uns auf Discord und wir helfen dir weiter.
-</p>
-
-
-</div>
-
-
-</section>
+document.getElementById("total").innerHTML=
+total.toFixed(2);
 
 
 
+document.getElementById("count").innerHTML=
+cart.length;
 
+
+}
+
+
+
+function openCart(){
+
+document.getElementById("cart")
+.classList.toggle("active");
+
+}
 
 
 
 
-<footer>
+function checkout(){
+
+
+let order="Neue Bestellung:%0A%0A";
+
+
+cart.forEach(item=>{
+
+
+order +=
+"- "+item.name+
+" "+item.price+"€%0A";
+
+
+});
+
+
+let total=cart.reduce(
+(a,b)=>a+b.price,
+0
+);
+
+
+
+order +=
+"%0ASumme: "+
+total.toFixed(2)
++"€";
+
+
+
+window.open(
+"https://discord.gg/VVbnkdupMX?message="+order,
+"_blank"
+);
+
+
+}
+
+
+
+updateCart();
+
+
+</script>
+
+
+
+
+
+<footer style="
+text-align:center;
+padding:70px 20px;
+border-top:1px solid #222;
+margin-top:80px;
+">
 
 
 <h2>
@@ -903,22 +638,15 @@ ANTER RESELLING
 
 
 <p style="color:#888;margin-top:15px;">
-Premium Gaming Services
+Premium GTA Services
 </p>
 
 
+<p style="margin-top:25px;">
+
+Discord:
 
 <br>
-
-
-
-<p>
-Discord:
-</p>
-
-
-
-<p>
 
 <span style="color:#8b5cf6;font-weight:bold;">
 
@@ -934,13 +662,13 @@ t9trixo
 
 
 
-
 <br>
 
 
 
-
-<a class="discord-btn" href="https://discord.gg/VVbnkdupMX" target="_blank">
+<a class="cart-btn" 
+href="https://discord.gg/VVbnkdupMX"
+target="_blank">
 
 Discord Server
 
@@ -948,18 +676,74 @@ Discord Server
 
 
 
-
-<p style="color:#555;margin-top:40px;">
+<p style="
+color:#555;
+margin-top:40px;
+">
 
 © 2026 ANTER RESELLING
 
 </p>
 
 
-
 </footer>
 
 
+
+
+
+<style>
+
+
+@media(max-width:700px){
+
+
+header{
+
+flex-direction:column;
+
+gap:25px;
+
+}
+
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+
+
+.products{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.cart{
+
+width:90%;
+
+right:5%;
+
+}
+
+
+.logo img{
+
+width:130px;
+
+}
+
+
+}
+
+
+
+</style>
 
 
 
