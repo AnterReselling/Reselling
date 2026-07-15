@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Anter Reselling</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter,Arial,sans-serif;
+}
+
+
+body{
+
+background:#050505;
+color:white;
+
+}
+
+
+/* NAVBAR */
+
+nav{
+
+height:80px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:0 8%;
+
+border-bottom:1px solid #1c1c1c;
+
+}
+
+
+.logo{
+
+font-size:25px;
+font-weight:800;
+
+letter-spacing:2px;
+
+}
+
+
+.logo span{
+
+color:#8b5cf6;
+
+}
+
+
+nav a{
+
+color:#aaa;
+text-decoration:none;
+margin-left:30px;
+
+transition:.3s;
+
+}
+
+
+nav a:hover{
+
+color:white;
+
+}
+
+
+
+/* HERO */
+
+
+.hero{
+
+min-height:80vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+padding:40px;
+
+}
+
+
+.hero h1{
+
+font-size:70px;
+
+font-weight:900;
+
+}
+
+
+.hero span{
+
+color:#8b5cf6;
+
+}
+
+
+.hero p{
+
+margin-top:25px;
+
+color:#999;
+
+font-size:20px;
+
+}
+
+
+.button{
+
+display:inline-block;
+
+margin-top:35px;
+
+background:#8b5cf6;
+
+padding:15px 35px;
+
+border-radius:10px;
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+
+.button:hover{
+
+opacity:.8;
+
+transform:translateY(-3px);
+
+}
+
+
+
+/* SECTIONS */
+
+
+section{
+
+padding:80px 8%;
+
+}
+
+
+.title{
+
+font-size:40px;
+
+margin-bottom:40px;
+
+}
+
+
+/* PRODUCTS */
+
+
+.products{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+}
+
+
+
+.card{
+
+background:#0d0d0d;
+
+border:1px solid #202020;
+
+border-radius:18px;
+
+padding:30px;
+
+transition:.3s;
+
+}
+
+
+.card:hover{
+
+border-color:#8b5cf6;
+
+transform:translateY(-8px);
+
+}
+
+
+
+.card h2{
+
+font-size:24px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.card p{
+
+color:#888;
+
+margin-bottom:20px;
+
+}
+
+
+
+.price{
+
+font-size:22px;
+
+font-weight:bold;
+
+margin:15px 0;
+
+}
+
+
+.old{
+
+text-decoration:line-through;
+
+color:#666;
+
+font-size:16px;
+
+}
+
+
+.sale{
+
+color:#8b5cf6;
+
+}
+
+
+.buy{
+
+display:block;
+
+margin-top:25px;
+
+text-align:center;
+
+background:white;
+
+color:black;
+
+padding:12px;
+
+border-radius:10px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+
+.buy:hover{
+
+background:#8b5cf6;
+
+color:white;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+<div class="logo">
+ANTER <span>RESELLING</span>
+</div>
+
+
+<div>
+
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#support">Support</a>
+
+</div>
+
+</nav>
+
+
+
+<div class="hero">
+
+
+<div>
+
+<h1>
+Premium <span>Gaming</span><br>
+Services
+</h1>
+
+
+<p>
+Fast Delivery • Professional Support • Secure Ordering
+</p>
+
+
+<a class="button" href="https://discord.gg/VVbnkdupMX" target="_blank">
+Join Discord
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<section id="products">
+
+
+<h2 class="title">
+Products
+</h2>
+
+
+<div class="products">
+
+
+
+<div class="card">
+
+<h2>Susano</h2>
+
+<p>Spoofer included</p>
+
+
+<div class="price">
+Month: <span class="sale">16,99€</span>
+</div>
+
+
+<div class="price">
+Quarterly: <span class="sale">23,99€</span>
+</div>
+
+
+<div class="price">
+Lifetime: <span class="sale">29,99€</span>
+</div>
+
+
+<a class="buy" href="https://discord.gg/VVbnkdupMX">
+Purchase
+</a>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>Ham Vanity Bundle</h2>
+
+
+<p>Premium Bundle</p>
+
+
+<div class="price">
+Week: 19,99€
+</div>
+
+
+<div class="price">
+Month: 34,99€
+</div>
+
+
+<div class="price">
+Lifetime: 59,99€
+</div>
+
+
+<a class="buy" href="https://discord.gg/VVbnkdupMX">
+Purchase
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>Vanity Menü</h2>
+
+
+<p>Clean Experience</p>
+
+
+<div class="price">
+Week: 9,99€
+</div>
+
+
+<div class="price">
+Month: 19,99€
+</div>
+
+
+<div class="price">
+Lifetime: 29,99€
+</div>
+
+
+<a class="buy" href="https://discord.gg/VVbnkdupMX">
+Purchase
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>HamMafia Spoofer</h2>
+
+
+<p>Hardware Spoofer</p>
+
+
+<div class="price">
+Week: 6,99€
+</div>
+
+
+<div class="price">
+Month: 13,99€
+</div>
+
+
+<div class="price">
+Lifetime: 37,99€
+</div>
+
+
+<a class="buy" href="https://discord.gg/VVbnkdupMX">
+Purchase
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>TZ Project International</h2>
+
+
+<p>Lifetime Access</p>
+
+
+<div class="price">
+
+<span class="old">49,99€</span>
+
+<span class="sale">
+29,99€
+</span>
+
+</div>
+
+
+<a class="buy" href="https://discord.gg/VVbnkdupMX">
+Purchase
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>TZ Project External</h2>
+
+
+<p>Lifetime Access</p>
+
+
+<div class="price">
+
+<span class="old">24,99€</span>
+
+<span class="sale">
+19,99€
+</span>
+
+</div>
+
+
+<a class="buy" href="https://discord.gg/VVbnkdupMX">
+Purchase
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>TZ Project Spoofer</h2>
+
+
+<p>Lifetime Access</p>
+
+
+<div class="price">
+
+<span class="old">19,99€</span>
+
+<span class="sale">
+14,99€
+</span>
+
+</div>
+
+
+<a class="buy" href="https://discord.gg/VVbnkdupMX">
+Purchase
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="support">
+
+
+<h2 class="title">
+Why Anter?
+</h2>
+
+
+<div class="products">
+
+
+<div class="card">
+
+<h2>⚡ Fast</h2>
+
+<p>
+Quick communication through Discord.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>💬 Support</h2>
+
+<p>
+Direct contact with our team.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>⭐ Premium</h2>
+
+<p>
+Clean and professional service.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+
+<h2>
+ANTER RESELLING
+</h2>
+
+
+<p style="color:#888;margin-top:15px;">
+Discord
+</p>
+
+
+<p style="margin-top:10px;">
+Abuballermann_<br>
+t9trixo
+</p>
+
+
+<br>
+
+
+<a class="button" href="https://discord.gg/VVbnkdupMX">
+Discord Server
+</a>
+
+
+<p style="color:#555;margin-top:40px;">
+© 2026 Anter Reselling
+</p>
+
+
+</footer>
+
+
+
+</body>
+
+</html>
